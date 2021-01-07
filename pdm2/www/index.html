@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"> -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href="css/materialize.css" />
+        <link rel="stylesheet" href="css/custom.css" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+
+
+        <title>Prova 2</title>
+    </head>
+    <body>
+        <div class="container">
+            <div  id="tela-login" style="display:;" >
+                    <header>
+                        <h1 class="center-align">CADASTRO</h1>
+                    </header>
+            
+                    <div class="center-align">
+                        <form class="row">
+                            <div class="input-field col s7 center-align">
+                                <label>LOGIN</label>
+                                <input id="login" type="text" class="validate">
+                            </div>
+                            <div class="input-field col s7">
+                                <label>MATRICULA</label>
+                                <input id="matricula" name="matricula" type="number" class="validate">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="row center-align">
+                        <a class="btn waves-effect #263238 blue-grey darken-4 " type="submit" name="action" onclick="consulta();">ENTRAR
+                            <i class="material-icons right">send</i>
+                        </a>
+                    </div>
+            </div>
+            <!--PAGINA INICIAL-->
+            <div id="tela-inicial" style="display:none;">
+                <div class="row">
+                    <div class="col s12 m6">
+                      <div class="card blue-grey darken-1">
+                        <div class="card-content white-text" id="dados">
+                        </div>
+                      </div>
+                    </div>
+                  </div>      
+            </div>
+        </div>
+        <script src="js/jquery.js"></script>
+        <script src="js/materialize.js"></script>
+        <script src="js/custom.js"></script>
+
+    </body>
+</html>
